@@ -1,0 +1,38 @@
+body {
+    /*Vamos a cambiar la fuentes, para no hacerlo todo el tiempo lo hacemos de una en el body*/
+    font-family: 'Lato', sans-serif; /*Sacada de google fonts*/
+}
+/** Globales **/
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;  /*Usamos para centrar*/
+}
+
+/*Header*/
+.site-header.inicio{
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between; /*permite tener el logo a la izquierda y lo otro a la derecha*/
+    align-items: center;
+    padding-top: 30px; /*genera una separacion*/
+}
+/* Navegacion*/
+.navegacion a{ /*la a significa que voy a modificar los hijos con a que tenga esa clase*/
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.navegacion a:hover{
+    color: aquamarine; /*Esto es para que cuando me paro arriba de un enlace este cambie su color*/
+}
+.navegacion a:last-of-type{
+    margin-right: 0;
+}
